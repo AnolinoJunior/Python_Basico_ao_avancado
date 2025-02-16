@@ -1,6 +1,6 @@
 '''
 Operadores de atribuição
-= += -= *= /= //= **= %=
+= += -= *= /= //= (**= potenciacao) %=
 '''
 contador = 10
 
