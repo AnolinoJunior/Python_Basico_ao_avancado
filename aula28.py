@@ -9,8 +9,8 @@ try:
     print('STR:', numero_str)
     numero_float = float(numero_str)
     print('FLOAT:', numero_float)
-    print(f'O dobro de {numero_str} eh  {numero_float * 2:.0f}')
-
+    print(f'O dobro de {numero_str} eh  {numero_float * 2:.0f}') 
+    # PEGUEI OS DOIS VALORES NOMEADOS TRANSFORMEI E MUTIPLIQUEI
 except:
     print('Isso nao eh um numero')
     

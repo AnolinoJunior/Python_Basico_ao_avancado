@@ -4,6 +4,7 @@ altura = 1.88
 peso = 105
 imc = 105 / (1.88 * 1.88)
 
+"f-strings" # formatação de string
 linha_1 =f'{nome} tem {altura} de altura'
 linha_2 = f'pesa {peso} quilos e seu imc eh'
 linha_3 =f'{imc:.2f} '
