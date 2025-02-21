@@ -7,11 +7,5 @@ Fatiamento [i:f:p] [::]
 Obs.:a funçao len retorna a qtd
 de caracteres da str
 '''
-
-
 variavel = 'ola mundo'
 print(variavel [0:9:1])
-
-
-
-
