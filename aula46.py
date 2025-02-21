@@ -1,6 +1,6 @@
-for i in rage(10):
-    if i == 2:
-        print('i é 2, pulando...')
+for i in range(10):
+    if i == 5:
+        print('i é 3, pulando...')
         continue
     
     if i == 8:
@@ -8,7 +8,7 @@ for i in rage(10):
         break
     
 
-    for j in range (1,3):
+    for j in range (1,5):
         print(i,j)
 else:
     print('For completo com sucesso')    
