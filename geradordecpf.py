@@ -1,48 +1,50 @@
 """
-<<<<<<< HEAD
-INTRODUÇÃO AS FUNÇOES (def) em python
-funções são trechos de código usados para
-replicar determinada ação ao longo do seu código.
-Elas podem receber valores para parâmetros (argumentos)
-e retornar um valor específico.
-Por padrão, funções Python retornam None (nada).    
-"""
-
-def saudacao(nome='sem nome'):
-    print(f'Olá, {nome}!')
-
-
-
-saudacao('Anolino Alves')
-saudacao('Marina Catuaba')
-saudacao('Eny de Oliveira')
-saudacao()
-=======
-Calculo do primeiro dígito do CPF
+Calculo do segundo dígito do CPF
 CPF: 746.824.890-70
-Colete a soma dos 9 primeiros dígitos do CPF
+Colete a soma dos 9 primeiros dígitos do CPF,
+MAIS O PRIMEIRO DIGITO,
 multiplicando cada um dos valores por uma
-contagem regressiva começando de 10
+contagem regressiva começando de 11
 
-Ex.: 746.824.890-70 (746824890)
-   10  9  8  7  6  5  4  3  2
-*  7   4  6  8  2  4  8  9  0
-   70  36 48 56 12 20 32 27 0
+Ex.:  746.824.890-70 (7468248907)
+   11 10  9  8  7  6  5  4  3  2
+*  7   4  6  8  2  4  8  9  0  7 <-- PRIMEIRO DIGITO
+   77 40 54 64 14 24 40 36  0 14
 
-Somar todos os resultados: 
-70+36+48+56+12+20+32+27+0 = 301
+Somar todos os resultados:
+77+40+54+64+14+24+40+36+0+14 = 363
 Multiplicar o resultado anterior por 10
-301 * 10 = 3010
+363 * 10 = 3630
 Obter o resto da divisão da conta anterior por 11
-3010 % 11 = 7
+3630 % 11 = 0
 Se o resultado anterior for maior que 9:
     resultado é 0
 contrário disso:
     resultado é o valor da conta
 
-O primeiro dígito do CPF é 7
+O segundo dígito do CPF é 0
 """
-cpf_enviado_usuario = '74682489070'
+# cpf = '36440847007'  # Esse CPF gera o primeiro dígito como 10 (0)
+import re
+import sys
+
+# cpf_enviado_usuario = '746.824.890-70' \
+#     .replace('.', '') \
+#     .replace(' ', '') \
+#     .replace('-', '')
+entrada = input('CPF [746.824.890-70]: ')
+cpf_enviado_usuario = re.sub(
+    r'[^0-9]',
+    '',
+    entrada
+)
+
+entrada_e_sequencial = entrada == entrada[0] * len(entrada)
+
+if entrada_e_sequencial:
+    print('Você enviou dados sequenciais.')
+    sys.exit()
+
 nove_digitos = cpf_enviado_usuario[:9]
 contador_regressivo_1 = 10
 
@@ -69,4 +71,3 @@ if cpf_enviado_usuario == cpf_gerado_pelo_calculo:
     print(f'{cpf_enviado_usuario} é válido')
 else:
     print('CPF inválido')
->>>>>>> 2e782f893191ee9bc66eaff74ec34b97121b55eb
