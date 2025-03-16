@@ -18,8 +18,7 @@ try:
 
      elif >= 18 and hora <= 23 : 
     print('boa noite meu amigo ')
-
-    else:
+     else:
         print('nao conheco essa hora')
 except:
-      print('digite numeros inteiros')
+      print('digite numero inteiros')

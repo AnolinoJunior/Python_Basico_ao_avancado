@@ -8,3 +8,6 @@ p1 = {
 #nome = p1.pop('nome')
 #print(nome)
 #print(p1)
+nome = p1.pop('nome')
+print(nome)
+print(p1)
