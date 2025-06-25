@@ -1,2 +1,3 @@
 # python
- Exercícios e projetos do curso
+ Repositorio sobre meu primeiro Curso de programação. 
+ Ele está bem desorganizado por ser meu primeiro repositório!
